@@ -17,7 +17,7 @@ const sendBtn = document.querySelector('.send');
 /**
  * Grabs a random line from 'loichuc.txt' and displays it.
  */
-async function randomtext() {
+async function randomtext(name) {
     try {
         const response = await fetch('resources/loichuc.txt');
         const data = await response.text();
@@ -95,17 +95,25 @@ async function randombg() {
  */
 function inputName() {
     // Remove any existing name before adding a new one
-    const existingName = cardElement.querySelector('.sender-name');
-    if (existingName) {
-        existingName.remove();
+    const existingName1 = cardElement.querySelector('.sender-name');
+    if (existingName1) {
+        existingName1.remove();
+    }
+    const existingName2 = cardElement.querySelector('.recipient-name');
+    if (existingName2) {
+        existingName2.remove();
     }
   
-    const name = prompt("Vui lòng nhập tên của bạn:");
-    if (name && name.trim() !== "") {
+    const name1 = prompt("Vui lòng nhập tên của bạn: (để trống để không chèn)");
+    if (name1 && name1.trim() !== "") {
         const nameElement = document.createElement('p');
         nameElement.className = 'sender-name';
-        nameElement.innerHTML = `Thân gửi,<br>${name}`;
+        nameElement.innerHTML = `Thân gửi,<br>${name1}`;
         cardElement.appendChild(nameElement);
+    }
+    const name2 = prompt("Vui lòng nhập tên giáo viên: (để trống để không chèn)");
+    if (name2 && name2.trim() !== "") {
+        
     }
 }
 
