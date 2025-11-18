@@ -1,9 +1,3 @@
-body {
-    margin: 0;
-    background: #f6f8f0;
-    font-family: "Times New Roman", serif;
-}
-
 .header {
     width: 100%;
     text-align: center;
@@ -98,9 +92,11 @@ body {
     width: 500px;
     height: 600px;
     padding: 40px;
-    border: 3px dashed #ff4bb5;
+    border: 2px solid #006be6;
     border-radius: 10px;
     display: grid;
+    background-image: url(/resources/background/bg3.jpg);
+    background-size: 580px 680px;
 }
 
 .loichuc {
@@ -109,6 +105,8 @@ body {
     line-height: 1.4;
     text-align: center;
     align-self: center;
+    width: 425px;
+    margin-left: 30px;
 }
 
 .nut-phai {
@@ -152,10 +150,20 @@ body {
     overflow: hidden;   /* Keeps the name from overflowing the card */
 }
 
+.recipient-name {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    text-align: right;
+    font-size: 24px;
+    font-style: italic;
+    font-family: "Playwrite VN", cursive;
+}
+
 .sender-name {
     position: absolute;
-    bottom: 20px;
-    right: 30px;
+    bottom: 50px;
+    right: 40px;
     text-align: right;
     font-size: 24px;
     font-style: italic;
@@ -215,7 +223,17 @@ body {
         transform: scale(0.5);
         transform-origin: top center;
         margin: 0 auto;
-        margin-left: 50px;
+        margin-left: 100px;
+    }
+    .nut-phai {
+        transform: scale(1.5);
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+    .nut-duoi {
+        transform: scale(1.5);
+        margin-right: 355px;
+        margin-top: 20px;
     }
 }
 
