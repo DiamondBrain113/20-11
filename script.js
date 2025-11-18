@@ -139,20 +139,20 @@ function inputName() {
 /**
  * Captures the card element as an image and triggers a download.
  */
-async function downloadCard() {
-    await document.fonts.ready;
-    htmlToImage.toPng(cardElementById, { cacheBust: true })
-        .then(function (dataUrl) {
-            const link = document.createElement('a');
-            link.download = 'thiep-tri-an-20-11.png';
-            link.href = dataUrl;
-            link.click();
-        })
-        .catch(function (error) {
-            console.error('Oops, something went wrong with the download!', error);
-            alert('Could not download the card. Please try again.');
-        });
+async function randomfont() {
+    try {
+        const response = await fetch('resources/fonts.txt');
+        const data = await response.text();
+        const fonts = data.split('\n').filter(font => font.trim() !== '');
+        const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+
+        // Directly apply the font-family name
+        textElement.style.fontFamily = randomFont;
+    } catch (error) {
+        console.error('Error fetching fonts:', error);
+    }
 }
+
 
 
 
