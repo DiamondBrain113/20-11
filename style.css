@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    background: #f6f8f0;
+    font-family: "Times New Roman", serif;
+}
+
+.header {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 125px;
+    height: 125px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.chia {
+    width: 75%;
+    height: 1px;
+    background: radial-gradient(black, transparent);
+    margin: 0 1px;
+    align-self: center;
+}
+
+/* LEFT */
+.left {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+}
+
+.message {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 225px;
+    margin: 0;
+    text-align: center;
+    font-family: "Lavishly Yours";
+    font-weight: 100;
+    background: linear-gradient(#ff4f8a 0%, transparent 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}    
+.text {
+    width: 120%;
+    font-size: 28px;
+    line-height: 1.5;
+    font-family: "Playwrite VN";
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    margin-top: 45%;
+    -webkit-box-align: center;
+    align-self: center;
+}
+
+
+.arrow {
+    width: 350px;
+    height: 330px;
+    align-self: end;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+/* RIGHT */
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.thiep {
+    width: 500px;
+    height: 600px;
+    padding: 40px;
+    border: 3px dashed #ff4bb5;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: "Brush Script MT", cursive;
+    line-height: 1.4;
+    text-align: center;
+    align-self: center;
+}
+
+.nut-phai {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    float: right;
+    align-self: end; 
+}
+
+.nut-duoi {
+    margin-top: 15px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.nut {
+    width: 48px;
+    height: 48px;
+    background: #025efb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-btn:hover {
+    background: #006be6;
+}
