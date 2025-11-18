@@ -6,7 +6,6 @@ body {
 
 .header {
     width: 100%;
-    padding: 20px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -18,6 +17,11 @@ body {
     margin: auto;
 }
 
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -26,7 +30,7 @@ body {
 
 .chia {
     width: 75%;
-    height: 1px;
+    height: 2px;
     background: radial-gradient(black, transparent);
     margin: 0 1px;
     align-self: center;
@@ -37,7 +41,9 @@ body {
     width: 60%;
     display: flex;
     flex-direction: row;
-    padding-left: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: -70px;
 }
 
 .message {
@@ -140,3 +146,91 @@ body {
 .icon-btn:hover {
     background: #006be6;
 }
+
+.thiep {
+    position: relative; /* Needed for absolute positioning of the name */
+    overflow: hidden;   /* Keeps the name from overflowing the card */
+}
+
+.sender-name {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    text-align: right;
+    font-size: 24px;
+    font-style: italic;
+    font-family: "Playwrite VN", cursive;
+}
+
+/* --- Enhancements only, defaults unchanged --- */
+
+/* Laptop screens: scale down the whole container */
+@media (max-width: 1400px) {
+  .container {
+    transform: scale(0.7);          /* shrink to 70% */
+    transform-origin: top center;   /* anchor scaling */
+    margin: 0 auto;                 /* keep centered */
+  }
+}
+
+/* Tablet screens: stop scaling, allow wrapping */
+@media (max-width: 1024px) {
+  .container {
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 25px;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .arrow {
+    transform: rotate(90deg) translate(600px, 600px); /* rotate + move left/down */
+    transform-origin: center;
+    margin: 20px auto 0;
+  }
+
+  /* Shift the message block to the right */
+  .message {
+    transform: translateX(150px); /* move right by 120px */
+    margin-left: auto;            /* optional: push further right */
+  }
+
+  /* Push the thiep card further down */
+  .right {
+    transform: translateY(70%) translateX(130px);  /* move down by 80px */
+    margin-top: 80px;             /* extra spacing below */
+  }
+
+  .nut-duoi {
+    margin-right: 310px;
+  }
+
+}
+/* Phone screens: compact layout */
+@media (max-width: 600px) {
+  .title {
+    font-size: clamp(40px, 10vw, 70px);
+  }
+  .text {
+    font-size: clamp(14px, 4vw, 18px);
+    line-height: 1.3;
+    position: static;
+    margin-top: 12px;
+  }
+  .loichuc {
+    font-size: clamp(20px, 6vw, 28px);
+  }
+  .nut {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+
+

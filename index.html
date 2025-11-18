@@ -13,7 +13,8 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
@@ -22,13 +23,13 @@
         <img src="resources/images/devdreamers.png" class="logo">
         <div class="chia"></div>
     </header>
+    <main class="container-wrapper">
     <main class="container">
 
         <!-- ========== LEFT SIDE ========== -->
         <section class="left">
           <div class="message">
             <p class="title">20/11</p>
-
             <p class="text">
                 Nhân ngày Nhà giáo Việt Nam, câu lạc bộ Dev Dreamers mang đến công cụ tạo thiệp tri ân,
                 nơi bạn có thể gửi gắm những lời chúc chân thành đến thầy cô.<br><br>
@@ -42,7 +43,7 @@
         <!-- ========== RIGHT SIDE ========== -->
         <section class="right">
           <div style="display: flex; flex-direction: row;">
-            <div class="thiep">
+            <div class="thiep" id="thiep-card"> <!-- Added an ID for easier selection -->
                 <p class="loichuc">
                   Nhân dịp lễ 20/11,<br>
                   chúng em gửi tới các thầy cô<br>
@@ -54,24 +55,26 @@
             </div>
             
             <div class="nut-phai">
-
-              <button class="nut newtxt" ><i class="bi bi-input-cursor-text"></i></button>
+              <button class="nut newtxt"><i class="bi bi-input-cursor-text"></i></button>
               <button class="nut font"><i class="bi bi-fonts"></i></button>
               <button class="nut bg"><i class="bi bi-image-alt"></i></button>
-
             </div>
           </div>
 
             <div class="nut-duoi">
-
               <button class="nut dl"><i class="bi bi-download"></i></button>
               <button class="nut renew"><i class="bi bi-arrow-repeat"></i></button>
               <button class="nut send"><i class="bi bi-envelope"></i></button>
-
             </div>
         </section>
 
     </main>
+    </main>
+
+    <!-- ===== JAVASCRIPT LIBRARIES ===== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
