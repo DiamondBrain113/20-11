@@ -52,18 +52,13 @@ async function randomfont() {
         const fonts = data.split('\n').filter(font => font.trim() !== '');
         const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
 
-        WebFont.load({
-            google: {
-                families: [randomFont]
-            },
-            active: function() {
-                textElement.style.fontFamily = randomFont;
-            }
-        });
+        // Just apply the font family directly — no WebFont.load needed
+        textElement.style.fontFamily = randomFont;
     } catch (error) {
         console.error('Error fetching fonts:', error);
     }
 }
+
 
 /**
  * Picks a random background image from /resources/background using a manifest file.
@@ -145,8 +140,7 @@ function inputName() {
  * Captures the card element as an image and triggers a download.
  */
 function downloadCard() {
-    // Use dom-to-image to convert the card element into a PNG
-    domtoimage.toPng(cardElementById)
+    htmlToImage.toPng(cardElementById, { cacheBust: true })
         .then(function (dataUrl) {
             const link = document.createElement('a');
             link.download = 'thiep-tri-an-20-11.png';
@@ -158,6 +152,7 @@ function downloadCard() {
             alert('Could not download the card. Please try again.');
         });
 }
+
 
 
 /**
