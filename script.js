@@ -145,7 +145,7 @@ async function downloadCard() {
     await document.fonts.ready;
 
     // Generate the image
-    const dataUrl = await htmlToImage.toPng(document.getElementById('thiep-card'));
+    const dataUrl = await htmlToImage.toPng(document.getElementById('tam-thiep'));
 
     // Trigger download
     const link = document.createElement('a');
