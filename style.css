@@ -165,7 +165,7 @@ body {
 /* --- Enhancements only, defaults unchanged --- */
 
 /* Laptop screens: scale down the whole container */
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .container {
     transform: scale(0.7);          /* shrink to 70% */
     transform-origin: top center;   /* anchor scaling */
@@ -210,5 +210,12 @@ body {
 
 }
 
+@media (max-width: 600px) {
+    .container {
+        transform: scale(0.5);
+        transform-origin: top center;
+        margin: 0 auto;
+    }
+}
 
 

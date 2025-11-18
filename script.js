@@ -111,7 +111,7 @@ function inputName() {
         nameElement.innerHTML = `Thân gửi,<br>${name1}`;
         cardElement.appendChild(nameElement);
     }
-    const name2 = prompt("Vui lòng nhập tên giáo viên: (để trống để không chèn)");
+    const name2 = prompt("Vui lòng nhập tên giáo viên: (thầy/cô <tên>)(để trống để không chèn)");
     if (name2 && name2.trim() !== "") {
         
     }
