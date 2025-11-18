@@ -236,14 +236,11 @@
 }
 
 @media (max-width: 600px) {
-    .header {
-        margin-left: 150px;
-    }
     .container {
         transform: scale(0.5);
         transform-origin: top center;
         margin: 0 auto;
-        margin-left: 150px;
+        margin-left: 100px;
     }
 
     .nut-phai {
