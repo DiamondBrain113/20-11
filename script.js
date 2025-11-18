@@ -139,18 +139,22 @@ function inputName() {
 /**
  * Captures the card element as an image and triggers a download.
  */
-async function randomfont() {
-    try {
-        const response = await fetch('resources/fonts.txt');
-        const data = await response.text();
-        const fonts = data.split('\n').filter(font => font.trim() !== '');
-        const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+async function downloadCard() {
+  try {
+    // Wait until all fonts are loaded
+    await document.fonts.ready;
 
-        // Directly apply the font-family name
-        textElement.style.fontFamily = randomFont;
-    } catch (error) {
-        console.error('Error fetching fonts:', error);
-    }
+    // Generate the image
+    const dataUrl = await htmlToImage.toPng(document.getElementById('card'));
+
+    // Trigger download
+    const link = document.createElement('a');
+    link.download = 'card.png';
+    link.href = dataUrl;
+    link.click();
+  } catch (error) {
+    console.error('Error generating image:', error);
+  }
 }
 
 
