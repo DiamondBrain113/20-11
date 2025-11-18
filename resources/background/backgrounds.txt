@@ -3,3 +3,8 @@ bg2.jpg
 bg3.jpg
 bg4.jpg
 bg5.png
+bg6.png
+bg7.png
+bg8.png
+bg9.png
+bg10.png
