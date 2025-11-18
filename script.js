@@ -140,6 +140,7 @@ function inputName() {
  * Captures the card element as an image and triggers a download.
  */
 function downloadCard() {
+    await document.fonts.ready;
     htmlToImage.toPng(cardElementById, { cacheBust: true })
         .then(function (dataUrl) {
             const link = document.createElement('a');
