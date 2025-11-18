@@ -236,7 +236,10 @@
 }
 
 @media (max-width: 600px) {
-    .body {
+    .header {
+        margin-left: 150px;
+    }
+    .container {
         transform: scale(0.5);
         transform-origin: top center;
         margin: 0 auto;
@@ -255,4 +258,108 @@
     }
 }
 
+@font-face {
+  font-family: 'Imperial Script';
+  src: url('resources/fonts/ImperialScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lavishly Yours';
+  src: url('resources/fonts/LavishlyYours-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mea Culpa';
+  src: url('resources/fonts/MeaCulpa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fleur De Leah';
+  src: url('resources/fonts/FleurDeLeah-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Corinthia';
+  src: url('resources/fonts/Corinthia-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bonheur Royale';
+  src: url('resources/fonts/BonheurRoyale-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ephesis';
+  src: url('resources/fonts/Ephesis-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ms Madi';
+  src: url('resources/fonts/MsMadi-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qwigley';
+  src: url('resources/fonts/Qwigley-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Birthstone';
+  src: url('resources/fonts/Birthstone-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Passions Conflict';
+  src: url('resources/fonts/PassionsConflict-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Charm';
+  src: url('resources/fonts/Charm-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lovers Quarrel';
+  src: url('resources/fonts/LoversQuarrel-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gwendolyn';
+  src: url('resources/fonts/Gwendolyn-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Italianno';
+  src: url('resources/fonts/Italianno-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 

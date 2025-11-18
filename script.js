@@ -52,7 +52,7 @@ async function randomfont() {
         const fonts = data.split('\n').filter(font => font.trim() !== '');
         const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
 
-        // Just apply the font family directly — no WebFont.load needed
+        // Directly apply the font-family name
         textElement.style.fontFamily = randomFont;
     } catch (error) {
         console.error('Error fetching fonts:', error);
