@@ -127,19 +127,36 @@
     gap: 15px;
 }
 
+/* Smooth transition for hover/click effects */
 .nut {
-    width: 48px;
-    height: 48px;
-    background: #025efb;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  width: 48px;
+  height: 48px;
+  background: #025efb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Hover effect: brighten + scale up slightly */
+.nut:hover {
+  background: #006be6;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Click (active) effect: shrink briefly */
+.nut:active {
+  transform: scale(0.95);
+  background: #004bb5;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
 
 .icon-btn:hover {
     background: #006be6;
